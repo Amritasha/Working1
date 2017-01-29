@@ -5,8 +5,8 @@ import com.restfb.types.User;
 public class FbMain {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		String accessToken = "EAACEdEose0cBAJuf5dBOyegrpM7RofiK5HZCvJQ5q8Utw4ThZAyfQZAzahisgrwHDHOqXWpZAIYo6FBfZABiREDydi36mvpBJtxlQmRkDgBtQ7ZBnZASA9ZCAHahKUVZA8hVMJGNZCoZArTHGejdlmrFoRTZChBZCUnwwsnyPBHwZCTAJ0Nr2GaKlUSIbR7XaOa3BH7ooZD";
+		
+		String accessToken = ""; //get access token from developers.facebook.com
 		FacebookClient fbClient  = new DefaultFacebookClient(accessToken);
 		
 		User me = fbClient.fetchObject("me",User.class);
